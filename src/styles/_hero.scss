@@ -1,0 +1,74 @@
+@use 'variables';
+
+.hero {
+    background-image: linear-gradient(variables.$blue1, variables.$purple3);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    ::before {
+        background: url(../images/oficial_partner.png);
+        content: "";
+        position: absolute;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 100px;
+        right: 30px;
+        width: 65px;
+        height: 100px;
+        @media (max-width:640px) {
+            top:80px;
+            right: 20px;
+            height: 600px;
+            width: 40px;
+        }
+    }
+
+    &__image {
+        padding: 100px 0 40px 0;
+        width: 100%;
+        align-items: center;
+
+        @media (max-width:640px) {
+            padding: 150px 0 20px 0;
+        }
+    }
+
+    &__text {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+
+        @media (max-width:640px) {
+            font-size: 35px;
+        }
+    }
+
+    &__information {
+        text-align: center;
+        font-weight:400;
+
+        @media (max-width:640px) {
+            font-size: 18px;
+        }
+    }
+
+    &__button {
+        text-decoration: none;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: bold;
+        display: block;
+        padding: 20px;
+        background-color: variables.$purple1;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media (max-width:640px) {
+            gap: 20px;
+        }
+    }
+}
