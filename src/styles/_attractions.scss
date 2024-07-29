@@ -1,0 +1,77 @@
+@use 'variables';
+
+.attractions {
+    background-image: linear-gradient(variables.$purple3, variables.$blue2);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        width: 100%;
+    }
+
+    &__tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &__content {
+            display: none;
+    
+            &--is-active {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__button {
+            font-family:Interstate-Black Cond ;
+            padding: 6px 20px;
+            letter-spacing: 1px;
+            font-size:18px;
+            font-weight:bold;
+            display: block;
+            background-color:rgba(0, 0%, 100%, 0.2);
+            margin: 0 auto 21px;
+            width:50%;
+            text-align: center;
+            cursor: pointer;
+            border-color: transparent;
+            border-radius: 2px;
+            &:hover {
+                transition: .3s;
+                background-color: variables.$textColor;
+                color: #3b172c;
+                text-decoration: none;
+            }
+
+            &--is-active {
+                background-color: variables.$textColor;
+                color: #3b172c;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__title {
+        font-family: Interstate-Black Cond, sans-serif;
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 50px;
+        text-align:center;
+        line-height: .8em;
+        opacity: .75;
+        margin-bottom: .2em;
+        cursor: pointer;
+        padding-top:40px
+    }
+
+    &__stage {
+        text-align: center;
+        font-size: 15px;
+        font-family: Interstate-Black Cond;
+        letter-spacing: 4px;
+        opacity: .4;
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+}

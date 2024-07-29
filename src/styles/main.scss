@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'hero';
+@use 'attractions';
 
 * {
     padding:0;
@@ -17,6 +18,13 @@
         width: 80%;
         margin: 0 auto;
     }
+}
+
+@font-face {
+    font-family: Interstate-Black Cond;
+    src: url(../../assets/interstate-black-cond-58b642507872b.otf);
+    font-weight: 400;
+
 }
 
 @font-face {
