@@ -4,6 +4,13 @@
     background-image: linear-gradient(variables.$blue1, variables.$purple3);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width:640px) {
+        width: 100%;
+        margin: -1px auto;
+    }
+    @media (max-width:1024px) and (min-width:641px) {
+        margin: -1px;
+    }
 
     ::before {
         background: url(../images/oficial_partner.png);

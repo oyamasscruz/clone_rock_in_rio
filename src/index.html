@@ -7,12 +7,13 @@
     <link rel="shortcut icon" href="images/favicon_rock_in_rion.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <section class="hero">
         <div class="container">
             <img class="hero__image" src="./images/logo_rock_in_rio.png" alt="Rock in Rio">
-            <p class="hero__text">Ingressos disponíveis em<span class="timer"></span> 15d 12h 24m 33s</p>
+            <p class="hero__text">Ingressos disponíveis em<span id="timer"></span></p>
             <p class="hero__information">
                 Chegou a hora de garantir o seu <b>#EuVou</b><br>na edição histórica dos <b>40 anos do Rock in Rio.</b></p>
             <p class="hero__information">Caso tenha adquirido o <b>Rock in Rio Card</b>, você pode escolher<br> o dia da sua preferência em MEUS PEDIDOS.</p>
@@ -213,18 +214,18 @@
     </section>
     <section class="sponsor">
         <div class="container">
-            <div class="sponsor__master">
+            <div data-aos="fade-up" class="sponsor__master">
                 <span class="sponsor__title">Patrocinador Master</span>
                 <img class="sponsor__image-master" src="./images/itau_sponsor.png" alt="itau">
             </div>
-            <div class="sponsor__institucional">
+            <div data-aos="fade-up" class="sponsor__institucional">
                 <span class="sponsor__title">Patrocinador Institucional</span>
                 <div class="sponsor__institucional__images">
                     <img class="sponsor__institucional-image" src="./images/rio_governo.jpg" alt="itau">
                     <img class="sponsor__institucional-image" src="./images/g20.svg" alt="itau">
                 </div>
             </div>
-            <div class="sponsor__sponsors">
+            <div data-aos="fade-up" class="sponsor__sponsors">
                 <span class="sponsor__title">Patrocinadores</span>
                 <div class="sponsor__sponsors__images">
                     <img class="sponsor__sponsors-image" src="./images/hnk_sponsor.png" alt="itau">
@@ -300,26 +301,30 @@
             <div class="footer__container__hire">
                 <a href="#" class="link_tittle">HIRE ME</a>
                 <div class="hire__buttons">
-                    <div class="hire__buttons__button">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-left" class="hire__buttons__button" >
                         <a class="hire__buttons__button__link" target="_blank" href="https://github.com/oyamasscruz">
                             <i class="fab fa-github header__socials__list__item__link__icon"></i>
                         </a>
                     </div>
-                    <div class="hire__buttons__button">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top" class="hire__buttons__button">
                         <a class="hire__buttons__button__link" target="_blank" href="https://www.linkedin.com/in/oyama-cruz/">
                             <i class="fab fa-linkedin-in header__socials__list__item__link__icon"></i>
                         </a>
                     </div>
-                    <div class="hire__buttons__button">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-right" class="hire__buttons__button">
                         <a class="hire__buttons__button__link" target="_blank" href="mailto:oyamasscruz@gmail.com">
                             <i class="fab fa-google-plus-g header__socials__list__item__link__icon"></i>
                         </a>
                     </div>
                 </div>
             </div>
+        <div class="footer__adress">
+            <h6>OYAMA CRUZ - ALUNO DA EBAC</h6>
+        </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
