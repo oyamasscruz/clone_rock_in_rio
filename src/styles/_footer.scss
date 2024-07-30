@@ -1,0 +1,84 @@
+@use 'variables';
+
+.footer {
+    background-image: linear-gradient(variables.$purple2, variables.$purple1);
+    .container {
+        padding-top: 40px;
+    }
+    &__image {
+        width: 170px;
+        margin-top: 35px;
+        margin-left: 3.5rem;
+    }
+
+    &__container {
+        padding: 65px 0 6%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        &__rock {
+            display:table;
+            float: left;
+            width: 100%;
+            text-align: left;
+            padding-left: 4rem;
+            font-size: 17px;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
+
+        &__contain {
+            margin-top: 20px;
+        }
+        &__hire {
+            text-align: left;
+            width: 70%;
+        }
+    }
+
+    &__links {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        padding: 12px 0;
+        display: block;
+        text-align: left;
+        &:hover {
+            color: variables.$linkHover;
+        }
+    }
+
+    .link_tittle {
+        cursor: default;
+        &:hover {
+            color: variables.$textColor;
+            
+        }
+    }
+
+    .hire__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        
+
+        &__button {
+            padding: 8px;
+            min-width: 90px;
+            display: inline-block;
+            margin: 15px 20px;
+            transition: filter .5s;
+            background-color: variables.$purple2;
+            border-radius: 16px;
+            &:hover {
+                filter: brightness(3);
+            }
+            &__link {
+                text-align: center;
+            }
+        }
+    }
+
+}
